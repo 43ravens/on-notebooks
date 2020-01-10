@@ -51,14 +51,9 @@ for fn in Path(".").glob("*.ipynb"):
     if first_cell_type in "markdown raw".split():
         desc_lines = first_cell["source"]
         for line in desc_lines:
-            suffix = ""
             if title_pattern.match(line):
-                line = title_pattern.sub("**", line)
-                suffix = "**"
-            if line.endswith("\n"):
-                readme += f"    {line}{suffix}  \n"
-            else:
-                readme += f"    {line}{suffix}  "
+                line = f"{title_pattern.sub('**', line).strip()}**"
+            readme += f"    {line}"
         readme += "\n" * 2
 
 this_year = datetime.date.today().year
@@ -68,7 +63,7 @@ copyright_years = (
     else f"{first_copyright_year}-{this_year}"
 )
 license = f"""
-##License
+## License
 
 These notebooks and files are copyright {copyright_years}
 by Doug Latornell, 43ravens.

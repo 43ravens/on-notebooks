@@ -9,18 +9,13 @@ Descriptions below the links are from the first cell of the notebooks
 
 * ## [ERDDAP-Access.ipynb](http://nbviewer.jupyter.org/github/43ravens/on-notebooks/blob/master/notebooks/ERDDAP-Access.ipynb)  
     
-    **Demo Accessing ERDDAP Grid & Table Datasets
-**  
-    
-  
+    **Demo Accessing ERDDAP Grid & Table Datasets**    
     This is a demo of accessing `griddap` and `tabledap`
-  
     datasets from the SalishSeaCast ERDDAP server
-  
-    (https://salishsea.eos.ubc.ca/erddap/).  
+    (https://salishsea.eos.ubc.ca/erddap/).
 
 
-##License
+## License
 
 These notebooks and files are copyright 2020
 by Doug Latornell, 43ravens.
