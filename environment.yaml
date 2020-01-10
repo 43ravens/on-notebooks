@@ -1,0 +1,15 @@
+name: on-notebooks
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - arrow
+  - cmocean
+  - jupyterlab
+  - matplotlib
+  - netcdf4
+  - pip
+  - python=3
+  - xarray
